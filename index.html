@@ -4,6 +4,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Charity: Water - Every Drop Creates Change</title>
+  <link rel="stylesheet" href="styles.css">
   <style>
     /* Reset */
     * {
@@ -13,7 +14,7 @@
     }
 
     body {
-      font-family: "Promixa Nova", sans-serif;
+      font-family: Arial, Helvetica, sans-serif;
       background-color: #f5f5f5;
       color: #333;
     }
@@ -55,7 +56,7 @@
       overflow: hidden;
     }
 
-    .hero img {
+    .hero img.hero-img {
       flex: 1 1 400px;
       max-width: 100%;
       object-fit: cover;
@@ -124,12 +125,7 @@
       bottom: 1rem;
       right: 1rem;
       width: 60px;
-      height: 60px;
-      background: #ffd100;
-      mask: url('jerrycan-placeholder.png') no-repeat center;
-      -webkit-mask: url('jerrycan-placeholder.png') no-repeat center;
-      mask-size: contain;
-      -webkit-mask-size: contain;
+      height: auto;
     }
 
     /* Footer */
@@ -146,14 +142,14 @@
 <body>
   <!-- Header -->
   <header>
-    <img src="cw_logo-2.png" alt="Charity Water Logo" class="logo">
+    <img src="img/cw_logo-2.png" alt="Charity Water Logo" class="logo">
     <button class="donate-btn">GIVE 💧</button>
   </header>
 
   <!-- Hero Section -->
   <section class="hero">
-    <!-- Left side image -->
-    <img src="placeholder-image.jpg" alt="Smiling child with clean water">
+    <!-- Left side image (replace with real hero image when you add it) -->
+    <img src="" alt="Smiling child with clean water" class="hero-img">
 
     <!-- Right side content -->
     <div class="hero-text">
@@ -164,8 +160,8 @@
         <p>$10 is all it takes to bring clean water to someone who needs it most.</p>
       </div>
 
-      <!-- Jerrycan icon (replace with SVG or PNG) -->
-      <div class="jerrycan"></div>
+      <!-- Jerrycan icon -->
+      <img src="img/water-can-transparent.png" alt="Jerrycan Icon" class="jerrycan">
     </div>
   </section>
 
